@@ -1,0 +1,22 @@
+.boxContainer {
+  box-shadow: 10px 10px 5px red;
+  margin-top: -7px;
+  margin: 20px;
+  max-width: 412;
+  font-weight: bold;
+  max-height: 400;
+  text-align: center;
+}
+
+.icons {
+  padding-top: 20px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.titles {
+  color: #6600cc;
+}
+.subs {
+  text-decoration: none;
+}

@@ -1,0 +1,296 @@
+/*.content {
+  box-sizing: border-box;
+  background: #077b8a;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: "roboto";
+  padding: 1em;
+}
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.unOrder {
+  padding: 0;
+}
+.brand {
+  text-align: center;
+}
+.brand span {
+  color: white;
+}
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+.wrapper > * {
+  padding: 1em;
+}
+.company_info {
+  background: #a2d5c6;
+}
+.company_info h3,
+.company_info li,
+.company_info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+
+  text-transform: uppercase;
+}
+.items {
+}
+.contact {
+  background: #f9feff;
+}
+
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.contact form label {
+  display: block;
+  text-transform: uppercase;
+}
+.contact form p {
+  margin: 0;
+  text-transform: uppercase;
+}
+.contact form .full {
+  grid-column: 1 / 3;
+}
+.contact form button,
+.contact form input,
+.contact form textarea {
+  border: 1px solid #c9e6ff;
+  width: 90%;
+  padding: 1em;
+}
+.contact form button {
+  background: #077b8a;
+  border: 0;
+  text-transform: uppercase;
+}
+.boxAnimate:hover {
+  animation: pulse; 
+  animation-duration: 1s;
+}
+.contact form button:hover,
+.contact form button:focus {
+  background: #92bde7;
+  color: white;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+  .company_info h3,
+  .company_info ul,
+  .company_info li,
+  .brand {
+    text-align: left;
+  }
+}
+
+
+
+.listItem {
+  list-style-type: none;
+}
+.contactContent {
+  box-sizing: border-box;
+  background: #077b8a;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: "roboto";
+  padding: 1em;
+}
+.contactContainer {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.contactBrand {
+  text-align: center;
+}
+.contactBrand span {
+  color: white;
+}
+
+.contactWrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+.contactWrapper > * {
+  padding: 1em;
+}
+.companyInfo {
+  background: #a2d5c6;
+}
+.companyInfo h3,
+.companyInfo li,
+.companyInfo ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+.contactInfo {
+  background: #f9feff;
+}
+.contactInfo form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contactInfo form label {
+  display: block;
+  text-transform: uppercase;
+}
+.contactInfo form p {
+  margin: 0;
+  text-transform: uppercase;
+}
+.contactInfo form .full {
+  grid-column: 1 / 3;
+}
+.contactInfo form button,
+.contactInfo form input,
+.contactInfo form textarea {
+  border: 1px solid #c9e6ff;
+  width: 90%;
+  padding: 1em;
+}
+.contactInfo form button {
+  background: #077b8a;
+  border: 0;
+  text-transform: uppercase;
+}
+.contactInfo form button:hover,
+.contactInfo form button:focus {
+  background: #92bde7;
+  color: white;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+@media (min-width: 700px) {
+  .contactWrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .contactWrapper > * {
+    padding: 2em;
+  }
+  .companyInfo h3,
+  .companyInfo ul,
+  .companyInfo li,
+  .contactBrand {
+    text-align: left;
+  }
+}
+*/
+.all {
+  box-sizing: border-box;
+  background: #6600cc;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: "segoe UI";
+  padding: 1em;
+}
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.ul {
+  list-style: none;
+  padding: 0;
+}
+.brand {
+  text-align: center;
+}
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+.wrapper > * {
+  padding: 1em;
+}
+.companyInfo {
+  background: #a2d5c6;
+}
+.companyInfo h3,
+.companyInfo ul {
+  text-align: center;
+  color: black;
+  margin: 0 0 1rem 0;
+}
+.contact {
+  background: #f9feff;
+}
+.contact h3 {
+  color: black;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.form label {
+  display: block;
+}
+.form p {
+  margin: 0;
+}
+.form .full {
+  grid-column: 1 / 3;
+}
+
+.form input {
+  width: 90%;
+  padding: 1em;
+  border: 1px solid #6600cc;
+}
+.form textarea {
+  width: 95%;
+  padding: 1em;
+  border: 1px solid #6600cc;
+}
+.form button {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #6600cc;
+}
+.button {
+  background: #c9e6ff;
+  border: 0;
+  text-transform: uppercase;
+}
+.button:hover {
+  background: #6600cc;
+  color: white;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+  .companyInfo h3,
+  .companyInfo ul,
+  .brand {
+    text-align: left;
+  }
+}
