@@ -1,6 +1,6 @@
 import { Grid } from "@material-ui/core";
 import styles from "../styles/Hero.module.css";
-
+import Image from 'next/image'
 export default function Hero() {
   return (
     <>
@@ -10,8 +10,10 @@ export default function Hero() {
         justifyContent="center"
         alignItems="center"
       >
+        <div className={styles.space}></div>
         <Grid item>
-          <img className={styles.avatar} alt="avatar" src="/AvatarMak.png" />
+          <Image width={300}
+            height={300} className={styles.avatar} alt="avatar" src="/AvatarMak.png" />
         </Grid>
       </Grid>
       <Grid item>

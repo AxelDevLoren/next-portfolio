@@ -5,6 +5,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import styles from "../styles/Box.module.css";
 import { Grid } from "@material-ui/core";
+import Image from 'next/image'
 export default function Box() {
   return (
     <>
@@ -17,7 +18,9 @@ export default function Box() {
         <Grid item xs={10} lg={3}>
           <Card className={styles.boxContainer}>
             <CardActionArea>
-              <img className={styles.icons} src="/design.png" alt="design" />
+              <div style={{ paddingTop: "20px" }} >
+                <Image width={50} height={50} src="/design.png" alt="design" />
+              </div>
               <CardContent>
                 <Typography
                   className={styles.titles}
@@ -83,7 +86,9 @@ export default function Box() {
           <Card className={styles.boxContainer}>
             <div className={styles.boxAnimate}>
               <CardActionArea>
-                <img className={styles.icons} src="/coding.png" alt="design" />
+                <div style={{ paddingTop: "20px" }} >
+                  <Image width={50} height={50} className={styles.icons} src="/coding.png" alt="design" />
+                </div>
                 <CardContent>
                   <Typography
                     className={styles.titles}
@@ -144,7 +149,9 @@ export default function Box() {
         <Grid item xs={10} lg={3}>
           <Card className={styles.boxContainer}>
             <CardActionArea>
-              <img className={styles.icons} src="/buisness.png" alt="design" />
+              <div style={{ paddingTop: "20px" }} >
+                <Image width={50} height={50} className={styles.icons} src="/buisness.png" alt="design" />
+              </div>
               <CardContent>
                 <Typography
                   className={styles.titles}

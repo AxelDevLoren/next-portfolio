@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Grid } from "@material-ui/core";
+import Image from "next/image";
 
 export default function Education() {
   return (
@@ -16,43 +17,41 @@ export default function Education() {
         alignItems="center"
       >
         <Grid item lg={3}>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img
-                  src="/stockholmU.png"
-                  alt="Avatar"
-                  style={{ width: "300px", height: "300px" }}
-                />
-              </div>
-              <div className="flip-card-back">
-                <h1>Stockholm Universitet </h1>
-                <p>Medie-Kommunikationsvetenskap</p>
+          <div className="containerH">
+            <div className="container">
+              <Image width={300} height={300} src="/kyh.png" alt="Avatar" className="image" />
+              <div className="overlay">
+                <div className="text">
+                  <h1>KYH</h1>
+                  <h3>Front-end Utvecklare</h3>
+                  <p>Two years</p>
+                  <p>UX, JS, HTML5, CSS3, React etc..</p></div>
               </div>
             </div>
           </div>
         </Grid>
 
         <Grid item lg={3}>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img
-                  src="/södertörnH.png"
-                  alt="Avatar"
-                  style={{ width: "300px", height: "300px" }}
-                />
-              </div>
-              <div className="flip-card-back">
-                <h1>Södertörns Högskola</h1>
-                <p>Makro-ekonomi</p>
-                <p>Journalistik</p>
+          <div className="containerH">
+            <div className="container">
+              <Image width={300} height={300} src="/södertörnH.png" alt="Avatar" className="image" />
+              <div className="overlay">
+                <div className="text">
+                  <h1>Södertörn University</h1>
+                  <h3>Economics and Journalism</h3>
+                  <p>One year</p>
+                  <p>Macro-Micro Economics</p></div>
               </div>
             </div>
           </div>
+
+
+
+
+
         </Grid>
       </Grid>
-      <div className="space"></div>
+
       <Grid
         container
         direction="row"
@@ -60,41 +59,28 @@ export default function Education() {
         alignItems="center"
       >
         <Grid item lg={3}>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img
-                  src="/kyh.png"
-                  alt="Avatar"
-                  style={{ width: "300px", height: "300px" }}
-                />
-              </div>
-              <div className="flip-card-back">
-                <h1>KYH</h1>
-                <p>Front-end Utvecklare</p>
-                <p>UX, JS, HTML5, CSS3, React etc..</p>
+          <div className="containerH">
+            <div className="container">
+              <Image width={300} height={300} src="/stockholmU.png" alt="Avatar" className="image" />
+              <div className="overlay">
+                <div className="text">
+                  <h1>Stockholm University</h1>
+                  <p>Medie-Communications Science</p>
+                  <p>A 2 year education and a completed "C-uppsats"</p></div>
               </div>
             </div>
           </div>
         </Grid>
 
         <Grid item lg={3}>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <img
-                  src="/kth.png"
-                  alt="Avatar"
-                  style={{
-                    width: "300px",
-                    height: "300px",
-                    borderRadius: "20px"
-                  }}
-                />
-              </div>
-              <div className="flip-card-back">
-                <h1>Kungliga Tekninska Högskolan</h1>
-                <p>Dataingenjör (pågående)</p>
+          <div className="containerH">
+            <div className="container">
+              <Image width={300} height={300} src="/kth_logo.png" alt="Avatar" className="image" />
+              <div className="overlay">
+                <div className="text">
+                  <h1>KTH</h1>
+                  <p>Dataingenjör</p>
+                  <p>My current education to "Dataingenjör"</p></div>
               </div>
             </div>
           </div>
@@ -102,6 +88,101 @@ export default function Education() {
       </Grid>
       <style jsx>
         {`
+        .containerH{
+          margin:20px;
+        }
+.container {
+
+  border-radius: 20px;
+  background: white;
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  border: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.testContainer {
+  margin: 20px; 
+  border:white solid 1px;
+  background: white;
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+}
+
+#imageTest {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.textMiddle {
+  transition: .5s ease;
+  opacity: 0; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+}
+
+.textMiddle:hover  {
+  border-radius: 20px;
+  width: 362px;
+  height:310px;
+  background: grey;
+  opacity: 0.9;
+}
+
+.testText {
+  
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
           .titleBox {
             padding-top: 100px;
             margin-bottom: -30px;
@@ -137,6 +218,8 @@ export default function Education() {
 
           .flip-card-front,
           .flip-card-back {
+           
+            
             position: absolute;
             width: 100%;
             height: 100%;

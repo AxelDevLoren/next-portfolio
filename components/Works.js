@@ -6,6 +6,7 @@ import { Card, Grid } from "@material-ui/core";
 import styles from "../styles/Works.module.css";
 import { Animated } from "react-animated-css";
 import CardActionArea from "@material-ui/core/CardActionArea";
+import Image from "next/image";
 
 export default function Works() {
   return (
@@ -35,10 +36,10 @@ export default function Works() {
                 <CardActionArea>
                   <div className="img__wrap">
                     {" "}
-                    <img
+                    <Image height={230} width={350}
                       alt="ganfit-site"
                       className={styles.cardImg}
-                      style={{ height: "auto", width: "100%" }}
+
                       src="/fitgang.png"
                     />
                     <p className="img__description">
@@ -61,10 +62,10 @@ export default function Works() {
               <Card className={styles.cards}>
                 <CardActionArea>
                   <div className="img__wrap">
-                    <img
+                    <Image
                       alt="files"
                       className={styles.cardImg}
-                      style={{ height: "auto", width: "100%" }}
+                      height={230} width={350}
                       src="/gihubFiles.jpg"
                     />
                     <p className="img__description">
@@ -87,7 +88,7 @@ export default function Works() {
               <Card className={styles.cards}>
                 <CardActionArea>
                   <div className="img__wrap">
-                    <img alt="ux" className={styles.img} src="/ux-mobile.jpg" />
+                    <Image height={230} width={350} alt="ux" className={styles.cardImg} src="/ux-mobile.jpg" />
                     <p className="img__description">
                       <a
                         style={{ textDecoration: "none", color: "white" }}

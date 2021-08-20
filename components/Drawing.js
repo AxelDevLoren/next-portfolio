@@ -1,5 +1,6 @@
 import styles from "../styles/Hero.module.css";
 import { Grid } from "@material-ui/core";
+import Image from "next/image";
 
 export default function Drawing() {
   return (
@@ -9,7 +10,7 @@ export default function Drawing() {
           {" "}
           <Grid item lg={7}>
             <div className={styles.AboutBox}>
-              <img
+              <Image width={400} height={400}
                 className={styles.aboutImg}
                 alt="wavingNerd"
                 src="/Dev.svg"
