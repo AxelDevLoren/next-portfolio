@@ -66,7 +66,7 @@ export default function Education() {
                 <div className="text">
                   <h1>Stockholm University</h1>
                   <p>Medie-Communications Science</p>
-                  <p>A 2 year education and a completed "C-uppsats"</p></div>
+                  <p>A 2 year education and a completed C-uppsats</p></div>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function Education() {
                 <div className="text">
                   <h1>KTH</h1>
                   <p>Dataingenjör</p>
-                  <p>My current education to "Dataingenjör"</p></div>
+                  <p>My current education to Dataingenjör</p></div>
               </div>
             </div>
           </div>

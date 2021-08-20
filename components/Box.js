@@ -37,7 +37,7 @@ export default function Box() {
                   component="p"
                 >
                   I spend alot of time in the css files and learing diffrent
-                  frameworks are libraries to match whatever Js framework i'm
+                  frameworks are libraries to match whatever Js framework Im
                   currently working with, to that end i wanna explore all
                   possible ways to desing
                 </Typography>

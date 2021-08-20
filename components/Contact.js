@@ -1,14 +1,17 @@
 import React from "react";
 import "animate.css";
+import { Link } from "@material-ui/core";
 export default function Contact() {
   return (
     <>
       <div>
         <h1>wanna come in contact?</h1>
         <div className="center">
-          <a href="/contactPage" className="button">
+          <Link href="/contactPage"><a className="button">
             <h2>Contact me!</h2>
           </a>
+          </Link>
+
         </div>
       </div>
 

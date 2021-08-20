@@ -31,11 +31,11 @@ export default function Hero() {
         <Grid item xs={10} lg={6}>
           {" "}
           <p className={styles.aboutText}>
-            I'm a high energy guy, always has been, always will. With that I
+            Im a high energy guy, always has been, always will. With that I
             tend to stay busy during the day, I wake up early drink some coffee
             and do some coding, by coding I mean I work on my own sites, review
             code or help some friends with their projects. When I get done with
-            the "work", I always go to the gym to get some of that excess energy
+            the work, I always go to the gym to get some of that excess energy
             out of my body, after that I usually calm myself down with some
             videos or movies, with some food next to me.
           </p>
